@@ -295,7 +295,7 @@ def run(
                 tracked_dets = mot_tracker.update(dets_to_sort)
                 track_frame = pd.DataFrame(tracked_dets)
                 track_frame.columns = ["x1", "y1", "x2", "y2", "conf", "cls", "frame", "nDist", "tID"]
-                track_frame.to_csv(f"{p.stem}.csv", mode='a', header=not os.path.exists(f"{p.stem}.csv"), index = False)
+                #track_frame.to_csv(f"{p.stem}.csv", mode='a', header=not os.path.exists(f"{p.stem}.csv"), index = False)
 
                 calc_dist = calculate_distances(track_frame, source, 1920)  
 
