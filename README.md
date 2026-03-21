@@ -19,14 +19,14 @@ Clone the Ultralytics YOLOv5 repository. It can be found here (https://github.co
     2. Move the 'weights' folder into the YOLOv5 parent folder
     3. Copy the 'bdelloids.yaml' file from the 'PrED-Model/data' folder and paste it into the 'YOLOv5/data' folder.
     
-### 5. In the terminal, change the working directory to the YOLOv5 parent folder
+### 4. In the terminal, change the working directory to the YOLOv5 parent folder
 `cd ./yolov5`
 
-### 6. Install Requirements
+### 5. Install Requirements
 **You may want to create a virutal environment using something like 'conda' before attempting this step.**
 `pip install -r requirements.txt`
 
-### 7. Run 'pred_detect_sort.py' Script
+### 6. Run 'pred_detect_sort.py' Script
 To run the PrED model, run the following command in your terminal
 
 `python pred_detect_sort.py --imgsz 1920 --weights ./weights/best.pt --source <location of video file>  --conf 0.1`
