@@ -41,7 +41,7 @@ The outputs of the script are:
 
       1. A potential encounter log titled '{video name}_frame_ranges.csv'
       2. An estimate of algal density printed in the terminal
-      3. An annotated video with class and 'Encounter!' bounding boxes. This will be saved in 'yolov5/runs/exp[number]'.
+      3. An annotated video with class and 'Encounter!' bounding boxes. This will be saved in 'yolov5/runs/detect/exp[number]'.
 
 
 
