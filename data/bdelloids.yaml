@@ -1,0 +1,6 @@
+# bdelloids dataset configuration
+# names for inference
+
+names:
+    0: philodina
+    1: cryptomonas
