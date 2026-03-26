@@ -1,0 +1,13 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing & Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# OS specific
+.DS_Store
