@@ -5,7 +5,7 @@ The python scripts and requirements needed to run the Predator-Prey Encounter De
 ## Intended use
 The Predator-Prey Encounter Detection Model is intended to be used to detect encounters between a semi-sessile rotifer species, *Philodina* sp., and a motile algal species, *Cryptomonas erosa*. This model requires Ultralytics YOLOv5 (all necessary files included in this repository) to run as well as the dependencies listed in the 'requirements.txt' file. 
 
-In addition to detecting and classifying, this model as the added functions of estimating algal density and generating a 'potential encounter' log in the form of a csv file. The potential encounter log includes the range of frame numbers, the range of timestamps, and the unique identifiers involved in a potential encounter. The algal density estimate will be printed in the terminal once the 'pred_detect_sort.py' script finishes. The log will be saved in the parent directory.
+In addition to detecting and classifying, this model has the added functions of estimating algal density and generating a 'potential encounter' log in the form of a csv file. The potential encounter log includes the range of frame numbers, the range of timestamps, and the unique identifiers involved in a potential encounter. The algal density estimate will be printed in the terminal once the 'pred_detect_sort.py' script finishes. The log will be saved in the parent directory.
 
 ## Steps
 
