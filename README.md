@@ -1,3 +1,4 @@
+![Build Status](https://github.com/bcdemattei/PrED-Model/actions/workflows/ci_testing.yml/badge.svg)
 
 # The Predator-Prey Encounter Detection (PrED) Model
 The python scripts and requirements needed to run the Predator-Prey Encounter Detection Model
