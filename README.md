@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 # The Predator-Prey Encounter Detection (PrED) Model
 The python scripts and requirements needed to run the Predator-Prey Encounter Detection Model
 
@@ -12,24 +17,24 @@ In addition to detecting and classifying, this model as the added functions of e
 
 Clone the Ultralytics YOLOv5 repository. It can be found here (https://github.com/ultralytics/yolov5)
 
-### 2. Clone the PrED-Model repository
-
-### 3. Copy the files from this repository into the cloned YOLOv5 repository
+### 2. Copy the files from this repository into the cloned YOLOv5 repository
     1. Copy the scripts ('*.py') and the 'requirements.txt' file and paste them directly into the YOLOv5 parent folder
     2. Move the 'weights' folder into the YOLOv5 parent folder
     3. Copy the 'bdelloids.yaml' file from the 'PrED-Model/data' folder and paste it into the 'YOLOv5/data' folder.
     
-### 4. In the terminal, change the working directory to the YOLOv5 parent folder
+### 3. In the terminal, change the working directory to the YOLOv5 parent folder
 `cd ./yolov5`
 
-### 5. Install Requirements
+### 4. Install Requirements
 **You may want to create a virutal environment using something like 'conda' before attempting this step.**
 `pip install -r requirements.txt`
 
-### 6. Run 'pred_detect_sort.py' Script
+### 5. Run 'pred_detect_sort.py' Script
 To run the PrED model, run the following command in your terminal
 
-`python pred_detect_sort.py --imgsz 1920 --weights ./weights/best.pt --source <location of video file>  --conf 0.1`
+**Be sure to update the file paths in the command**
+
+`python pred_detect_sort.py --imgsz 1920 --weights ./weights/best.pt --source ./sample_video.mp4  --conf 0.1`
 
   Additional arguments added in for PrED:
   
