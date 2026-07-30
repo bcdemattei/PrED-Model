@@ -105,6 +105,7 @@ def run(
     vid_stride=1,  # video frame-rate stride
     volume_arena = 0.00482, # volume of the viewing plane aka the viewing arena. in mm3
     volume_total = 1000, #total volume of sample. in mm3
+    threshold = 0.1, #The normalized distance (nDist) threshold below which an encounter is recorded
 ):
     """
     Runs YOLOv5 detection inference on various sources like images, videos, directories, streams, etc.
@@ -143,6 +144,7 @@ def run(
         vid_stride (int): Stride for processing video frames, to skip frames between processing. Default is 1.
         volume_arena (float): Volume of the viewing arena in mm³. Default is 0.00482.
         volume_total (float): Total volume of the sample in mm³. Default is 1000.
+        threshold (float): The normalized distance (nDist) threshold below which an encounter is recorded. Default is 0.1.
 
     Returns:
         None
@@ -320,7 +322,7 @@ def run(
                     nDist = float(nDist)
                     nDist_str = f"{'%.3f'%(nDist)}"
 
-                    if nDist < 0.1 and cls == 1:
+                    if nDist < threshold and cls == 1:
         # Find the object of class 0 that is being measured from
                         for *xyxy_other, conf_other, cls_other, frame_other, nDist_other, tracked_object_other in tracked_dets:
                             if cls_other == 0 and tracked_object != tracked_object_other:
